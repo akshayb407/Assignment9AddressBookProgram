@@ -16,6 +16,22 @@ namespace AddressBookProgram
         public long zip;
         public long phoneNumber;
         public String email;
+        public AddressBook(string firstName, String lastName, String address, String city, String state, long zip, long phoneNumber, String email)
+        {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.address = address;
+            this.city = city;
+            this.state = state;
+            this.zip = zip;
+            this.phoneNumber = phoneNumber;
+            this.email = email;
+        }
+
+        public AddressBook()
+        {
+
+        }
 
         static public void SetAddress()
         {
@@ -29,7 +45,7 @@ namespace AddressBookProgram
             addressBook.zip = 12354;
             addressBook.phoneNumber = 6789009876;
             addressBook.email = "akshayb407@gmail.com";
-            Console.WriteLine(addressBook.firstName);
+           
         }
     }
 }
